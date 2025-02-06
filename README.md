@@ -93,6 +93,35 @@ vimscii/
 - Test your stage thoroughly before submitting
 - Consider the difficulty level when choosing a category
 
+### Code Style
+
+This project uses [Black](https://github.com/psf/black) for code formatting. Please ensure your code adheres to the Black style guidelines.
+
+To format your code, run:
+
+```bash
+pip install black
+black .
+```
+
+Or, to check which files need formatting without applying changes:
+
+```bash
+black --check .
+```
+
+You can also configure your editor to run Black automatically on save. For VS Code, add the following to your `settings.json`:
+
+```json
+{
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    }
+}
+```
+
 ## Development
 
 The game is built with:
